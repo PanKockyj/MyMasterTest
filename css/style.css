@@ -131,7 +131,6 @@ code {
 .picture img {
 	width: 100%;
 	border: 1px solid #CDC9C9;
-	/*margin: 0 auto;*/
 }
 
 
@@ -142,7 +141,6 @@ code {
 button {
 	background: linear-gradient(to bottom, #57E948, #284B1A);
 	padding: 7px;
-	/*border: 1px solid transparent;*/
 	border: 1px;
 	border-radius: 5px;
 	outline: none;
