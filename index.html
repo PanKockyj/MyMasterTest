@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Barbie</title>
+</head>
+<body>
+<header class="header">
+	<div class="container">
+		<h1>Тестове завдання</h1>
+	</div>
+</header>
+
+	<!--NAVIGATION-->
+<nav class="navigation">
+	<div class="container-nav">
+		<ul>
+			<li><a href="#cycle">Цикли</a></li>
+			<li><a href="#picture">Картинка</a></li>
+		</ul>
+	</div>
+</nav>
+
+	<!--/NAVIGATION-->
+
+
+	<!--MAIN-->
+<main class="main">
+	<div id="cycle">
+		<div class="container">
+			<h2>Завдання</h2>
+			<h3>Вывести все элементы массива, которые кратны 3 и не кратны 12.</h3>
+			<h2>Реалізація циклу</h2>
+			<h3>Процедурне програмування</h3>
+			<pre><code>
+&lt;php
+for($i=1; $i&lt;=100; $i++){
+	$arr[] = $i;
+	}
+
+while($arr[$i]){
+if($arr[$i]%3==0||$arr[$i]%12!=0){
+	echo $arr[$i];}
+$i++;
+}
+?&gt;
+			</code></pre>
+			<h3>Об’єктно-орієнтоване програмування</h3>
+			<pre><code>
+&lt;?php
+ 
+class Cycle
+{
+    public $arr;
+ 
+ 
+    function setCycle(){
+        for($i=1; $i&lt;=100; $i++)
+        {
+            $this->arr[] = $i;
+        }
+        return $this->arr;
+}
+ 
+    function viewResult($arr){
+        $i = 0;
+        while($i<100){
+            if($this->arr[$i]%3==0&&$this->arr[$i]%12!=0){
+                echo $this->arr[$i];
+                echo "&lt;br&gt;";
+            }
+            $i++;
+        }
+ 
+    }
+}
+ 
+$cycle = new Cycle();
+$cycle->viewResult($cycle->setCycle());
+ 
+?&gt;
+
+			</code></pre>
+		</div>
+	</div>
+	<div id="picture">
+		<div class="container">
+			<div class="collections">
+				<h3>Вывести все элементы массива, которые кратны 3 и не кратны 12.</h3>
+				<div class="picture">
+					<div class="place">
+						<img src="img/11.png" alt="">
+						<div class="button">
+							<p><a href="#">Набор мебели Барби в ассорт. 3 вида</a></p>
+							<p><small>Цена: </small><b>339 </b><small>грн</small></p>
+							<button>Купить</button>
+						</div>
+					</div>
+				</div>
+				<div class="picture">
+					<div class="place">
+						<img src="img/22.png" alt="">
+						<div class="button">
+							<p><a href="#">Дом мечты Барби "Малибу BARBIE"</a></p>
+							<p><small>Цена: </small><b>3179 </b><small>грн</small></p>
+							<button>Купить</button>
+						</div>
+					</div>
+				</div>
+				<div class="picture">
+					<div class="place">
+						<img src="img/33.png" alt="">
+						<div class="button">
+							<p><a href="#">Кукла Барби серии "Пляж"</a></p>
+							<p><small>Цена: </small><b>99 </b><small>грн</small></p>
+							<button>Купить</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+	<!--/MAIN-->
+
+
+	<!--FOOTER-->
+<footer class="footer">
+	<div class="container">
+		<p>Copyright Bogdan 2016</p>
+	</div>
+</footer>
+	<!--/FOOTER-->
+
+	
+</body>
+</html>
